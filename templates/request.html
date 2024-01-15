@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request</title>
+</head>
+<body>
+    <div>
+        <a href="/dashboard"><</a>
+        <h1>
+            Vraag hier je liedje aan!
+        </h1>
+    </div>
+    <form action="/submit_request" method="post">
+        <label for="Artist">Artiest:</label>
+        <input type="search" id="Artist" name="Artist">
+        <label for="Song">Liedje:</label>
+        <input type="search" id="Song" name="Song">
+        <input type="submit" value="Zoek">
+    </form>
+</body>
+</html>

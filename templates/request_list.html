@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request</title>
+</head>
+<body>
+    <div>
+        <a href="/request"><</a>
+        <h1>
+            Resultaten voor: {{artist}} {{song}}
+        </h1>
+    </div>
+    <ul>
+        {% for song in songs %}
+          <li>
+            <h3>{{ song.title }}</h3>
+            <p>Artist: {{ song.artist }}</p>
+            <img src="{{ song.album_cover }}" alt="Album Cover">
+          </li>
+        {% endfor %}
+      </ul>
+</body>
+</html>
