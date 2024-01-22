@@ -1,0 +1,57 @@
+@keyframes vinylSpin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+body{
+    background-color: rgb(163, 156, 139);
+}
+
+.button {
+    border: none;
+    color: rgb(190, 190, 190);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: #008CBA;
+  }
+
+.vinylImg {
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    background-size: contain;
+    animation-name: vinylSpin;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.vinyl {
+    align-items: center;
+    width: 900px;
+    height: 900px;
+    background-color: #080808;
+    box-shadow: 5px 10px 25px rgba(29,29,29,.5058823529411764);
+}
+.background{
+    float: center;
+    width: 1000px;
+    height: 1000px;
+    background-image: url("../img/Wood.jpg");
+    border-radius: 10%;
+    box-shadow: 5px 10px 25px rgba(29,29,29,.5058823529411764);
+}
+
+.vinylImg, .vinyl {
+    display: flex;
+    border-radius: 50%;
+    margin: auto;
+}
